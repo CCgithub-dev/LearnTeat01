@@ -2,6 +2,7 @@ package com.example.learnteat01.config;
 
 
 import com.example.learnteat01.Override.ConditionOnClass;
+import com.example.learnteat01.damian.Disco;
 import com.example.learnteat01.damian.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,4 +18,8 @@ public class Userconfig {
         return new User();
     }
 
+    @Bean
+    public Disco disco() {
+        return new Disco();
+    }
 }
